@@ -5,6 +5,7 @@ const usersRouter = require("./routes/api/users");
 const path = require("path");
 const config = require('config');
 const app = express();
+
 // Body parser middleware
 app.use(
     express.urlencoded({

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './Home.css';
-import { FaNodeJs, FaReact, FaGithub } from 'react-icons/fa';
-import { DiMongodb } from 'react-icons/di';
-
 class Home extends Component {
   render() {
+    console.log(process.env.REACT_APP_POKEMON1, 'process')
+    console.log(process.env.REACT_APP_POKEMON2, 'process')
+    console.log(process.env.REACT_APP_POKEMON3, 'process')
+
     return (
       <section id="banner" className="banner">
         <div className="container p-0">
@@ -13,10 +14,10 @@ class Home extends Component {
             <div className="col-lg-6">
               <div className="banner-left">
                 <h1 className="text-capitalize">
-                  Welcome to the Oscar Pool!!!!
+                  {/* Welcome to the Oscar Pool!!!! */}
                 </h1>
                 <div className="buttons">
-                  <Link
+                  {/* <Link
                     to="/login"
                     className="btn btn-lg btn-outline-none border-3 btn-login"
                   >
@@ -27,7 +28,7 @@ class Home extends Component {
                     className="btn btn-lg btn-outline-none border-3 btn-register"
                   >
                     Signup
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

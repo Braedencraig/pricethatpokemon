@@ -1,16 +1,16 @@
 /** =================banner====================*/
 #banner {
     /* background-image: url('https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'); */
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     color: #ffffff !important;
-    position: relative;
+    position: relative; */
 }
 
-#banner::after {
+/* #banner::after {
     position: absolute;
     content: '';
     top: 0;
@@ -64,4 +64,4 @@
 .buttons .btn-github {
     background-color: bisque;
     color: #000000 !important;
-}
+} */
