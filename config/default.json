@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://braedenc:7pYBaiKrtH!.rj7@cluster0.5pou4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "secretOrKey": "secret"
+}
+
+
