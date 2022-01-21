@@ -18,5 +18,321 @@ body {
     overflow-x: hidden !important;
     width: 100%;
     height: 100%;
-    background: black;
+    background: #02B3B0;
+    font-family: 'Permanent Marker', cursive;
+    color: #F9DE29;
+}
+
+.container {
+    max-width: 1400px;
+    margin-top: 40px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.hero, .hero-text {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-text h1, h2 {
+    font-size: 45px;
+    letter-spacing: 2px;;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+.spa {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.hero img {
+    max-width: 700px;
+}
+
+:root {
+    --color-primary: #F9DE29;
+    --color-secondary: purple;
+    --color-tertiary: #f28b7d;
+    --color-quaternary: purple;
+    --color-quinary: #F9DE29;
+  }
+
+
+  .content {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .text-shadows {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+      9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(2rem + 5vw);
+    text-align: center;
+    margin: 0;
+    color: var(--color-primary);
+    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+  }
+  
+  @keyframes shadows {
+    0% {
+      text-shadow: none;
+    }
+    10% {
+      text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    20% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);
+    }
+    30% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    40% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    50% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    60% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    70% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    80% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);
+    }
+    90% {
+      text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    100% {
+      text-shadow: none;
+    }
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    40% {
+      transform: translate(-12px, -12px);
+    }
+    50% {
+      transform: translate(-12px, -12px);
+    }
+    60% {
+      transform: translate(-12px, -12px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  .pokemon-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      margin-bottom: 40px;
+      margin-top: 40px;
+      align-items: flex-end;
+  }
+
+  .pokemon-card {
+      text-align: center;
+  }
+
+  .pokemon-card img {
+      max-width: 400px;
+      border: 10px solid #F9DE29;
+  }
+
+  input, button {
+      background-color: #F9DE29;
+      border: 3px solid #F9DE29;
+      color: #02B3B0;
+      font-size: 22px;
+      padding: 4px;
+      border-radius: 20px;
+  }
+
+  ::placeholder {
+    color: #F9DE29;
+    font-size: 24px;
+  }
+
+  label {
+      display: flex;
+      flex-direction: column;
+      font-size: 30px;
+      text-align: center;
+  }
+
+  .name {
+      display: flex;
+      justify-content: center;
+  }
+
+  .name input {
+      width: 300px;
+  }
+  button {
+      font-size: 34px;
+      padding: 16px;
+  }
+
+  .submit {
+      margin-top: 80px;
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: center;
+  }
+
+
+  .press-effect {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 4px solid #F9DE29;
+    box-shadow: 0px 5px 10px #333;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .press-effect:active {
+    box-shadow: 0px 4px 8px #333;
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+
+  .leaderboard h1 {
+    font-size: 50px;
+  }
+
+  .leaderboard {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .leaderboard-container {
+    border: 10px solid #F9DE29;
+  }
+
+  .leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 3px solid #F9DE29;
+    /* border-bottom: 5px solid #F9DE29; */
+  }
+
+  .leaderboard-item-name, .leaderboard-item-score {
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: 1400px) {
+    .pokemon-card img {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .pokemon-card img {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .pokemon-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .pokemon-card img {
+        max-width: 400px;
+    }
+
+    .pokemon-card {
+        margin-bottom: 60px;
+        border: 10px solid #F9DE29;
+        padding: 20px;
+    }
+
+    .hero-text h1 {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    button {
+      font-size: 26px;
+    }
+
+    .submit {
+      margin-top: 0;
+    }
+
+    .pokemon-container {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .leaderboard-item {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .leaderboard-container {
+      margin-bottom: 40px;
+    }
+
+    .leaderboard h1 {
+      font-size: 35px;
+    }
+
+    .leaderboard-item-name, .leaderboard-item-score {
+      font-size: 20px;
+    }
+
+    .leaderboard {
+      width: 100%;
+    }
+
+    .leaderboard .container {
+      margin-top: 0;
+    }
 }

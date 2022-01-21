@@ -5,25 +5,9 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  email: {
-    type: String,
+  score: {
+    type: Number,
     required: true
-  },
-  password: {
-    type: String,
-    required: true
-  },
-  date: {
-    type: Date,
-    default: Date.now
-  },
-  actors: {
-    type: Array,
-    default: []
-  },
-  movies: {
-    type: Object,
-    default: {}
   }
 });
 

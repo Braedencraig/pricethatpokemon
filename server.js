@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const passport = require("passport");
 const usersRouter = require("./routes/api/users");
+
 const path = require("path");
 const config = require('config');
 const app = express();
